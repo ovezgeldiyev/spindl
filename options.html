@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Akce detail - možnosti</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <header class="header light" id="header">
+        <div class="auto__container">
+          <div class="header__inner">
+            <a href="#" class="header__inner-logo">
+              <img src="./images/logo.svg" alt="" />
+              <img class="dark" src="./images/logo-dark.svg" alt="" />
+            </a>
+            <div class="header__inner-side">
+              <nav class="nav" id="menu">
+                <ul class="nav__inner">
+                  <li>
+                    <button class="active" id="discoverBtn">
+                      Objevit & Užít si
+                      <svg>
+                        <use xlink:href="#chevron-down"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Inspirace
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Akce
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Ubytování & Gastronomie
+                    </a>
+                  </li>
+                  <li>
+                    <button id="infoBtn">
+                      Informace
+                      <svg>
+                        <use xlink:href="#chevron-down"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Občan
+                    </a>
+                  </li>
+                  <div class="nav__inner-contact">
+                    <a href="#">
+                      <img src="./images/icons/user.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./images/icons/envelope.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./images/icons/phone.svg" alt="">
+                    </a>
+                    <button type="button" id="searchBtn">
+                      <img src="./images/icons/search.svg" alt="">
+                    </button>
+                  </div>
+                </ul>
+              </nav>
+              <div class="burger" id="menuBtn">
+                <span></span>
+              </div>
+              <div class="lang" id="lang">
+                <button class="lang__btn">
+                  <img src="./images/icons/globe.svg" alt="">
+                </button>
+                <input type="hidden" value="">
+                <ul class="lang__dropdown">
+                  <li data-value="1">
+                    <img src="./images/icons/flags/czech.svg" alt="">
+                  </li>
+                  <li data-value="1">
+                    <img src="./images/icons/flags/germany.svg" alt="">
+                  </li>
+                  <li data-value="1">
+                    <img src="./images/icons/flags/britain.svg" alt="">
+                  </li>
+                  <li data-value="1">
+                    <img src="./images/icons/flags/poland.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop" id="discover">
+          <div class="auto__container">
+            <div class="drop__inner">
+              <button type="button" class="drop__inner-close dropClose">
+              </button>
+              <div class="drop__inner-content">
+                <div class="drop__inner-col">
+                  <h4>
+                    Naše tipy
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        5 důvodů proč navštívit Špindlerův Mlýn
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Tipy kde se dobře najíst
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        8 zábavných míst, které navštívit s dětmi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                  </ul>
+                  <h4>
+                    Praktické informace
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        5 důvodů proč navštívit Špindlerův Mlýn
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Tipy kde se dobře najíst
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        8 zábavných míst, které navštívit s dětmi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="drop__inner-col">
+                  <h4>
+                    Nejoblíbenější
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Lanovky a sjezdové tratě
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Běžecké tratě
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Skiaplové trasy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Bruslení
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Hřebenové tůry
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Cyklovýzva
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Adventure park
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Bobová dráha
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Monkey Park
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="drop__inner-row">
+                <a href="#" class="dropItem">
+                  <h4>
+                    Jaro
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/spring.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Léto
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/summer.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Podzim
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/autumn.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Zima
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/winter.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop" id="info">
+          <div class="auto__container">
+            <div class="drop__inner">
+              <button type="button" class="drop__inner-close dropClose">
+              </button>
+              <div class="drop__inner-row">
+                <a href="#" class="dropItem">
+                  <h4>
+                    Doprava
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/transport.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Parkování
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/park.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Autobusy
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/bus.jpg" alt="">
+                  </div>
+                </a>
+                <a href="#" class="dropItem">
+                  <h4>
+                    Infocentrum
+                  </h4>
+                  <div class="dropItem__image">
+                    <img src="./images/drop/infocenter.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="drop__inner-content">
+                <div class="drop__inner-col">
+                  <h4>
+                    Naše tipy
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        5 důvodů proč navštívit Špindlerův Mlýn
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Tipy kde se dobře najíst
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        8 zábavných míst, které navštívit s dětmi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                  </ul>
+                  <h4>
+                    Praktické informace
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        5 důvodů proč navštívit Špindlerův Mlýn
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Tipy kde se dobře najíst
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        8 zábavných míst, které navštívit s dětmi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Top 10 aktivit a zážitků
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="drop__inner-col">
+                  <h4>
+                    Nejoblíbenější
+                  </h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Lanovky a sjezdové tratě
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Běžecké tratě
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Skiaplové trasy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Bruslení
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Hřebenové tůry
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Cyklovýzva
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Adventure park
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Bobová dráha
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Monkey Park
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop sm" id="search">
+          <div class="auto__container">
+            <div class="drop__inner">
+              <button type="button" class="drop__inner-close dropClose">
+              </button>
+              <div class="drop__inner-search">
+                <h4>
+                  Vyhledávání
+                </h4>
+                <form class="search big">
+                  <input type="search" placeholder="Hledaný výraz">
+                  <button type="submit">
+                      <img src="./images/icons/search-big.svg" alt="">
+                  </button>
+              </form>
+              </div>
+              <div class="drop__inner-links">
+                <h4>
+                  Často hledané
+                </h4>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Lanovky a sjezdové tratě
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Běžecké tratě
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Skiaplové trasy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Bruslení
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Hřebenové tůry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Cyklovýzva
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Adventure park
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Bobová dráha
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Monkey Park
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- header end
+    =========================================== -->
+    <main class="main big">
+        <a href="#" class="message" id="message">
+            <img src="./images/icons/message.svg" alt="">
+          </a>
+        <!-- article start
+    =========================================== -->
+        <section class="article">
+            <div class="auto__container">
+                <div class="article__inner">
+                    <div class="article__inner-title">
+                        <h1 class="heading6">
+                            <a href="#">
+                                Akce
+                            </a>
+                            <span>
+                                /
+                            </span>
+                            <a href="#">
+                                Kultura
+                            </a>
+                        </h1>
+                        <h5>
+                            09.12.2023
+                        </h5>
+                        <h3>
+                            Špindl Ski Opening
+                        </h3>
+                        <p class="big">
+                            Zahájení zimní sezóny
+                        </p>
+                        <a href="#">
+                            <span>
+                                <img src="./images/icons/location.svg" alt="">
+                            </span>
+                            Špindlerův Mlýn - Svatý Petr
+                        </a>
+                    </div>
+                    <div class="article__inner-image">
+                        <img src="./images/article/3.jpg" alt="">
+                    </div>
+                    <div class="article__inner-main">
+                        <div class="article__inner-social">
+                            <p>
+                                Share
+                            </p>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="article__inner-text">
+                            <p class="big">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque tincidunt scelerisque
+                                libero. Fusce aliquam vestibulum ipsum. Donec vitae arcu. Praesent in mauris eu tortor
+                                porttitor accumsan. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus.
+                                Integer in sapien.
+                            </p>
+                            <p>
+                                A designer is an emerging synthesis of artist, inventor, mechanic, objective economist,
+                                and evolutionary strategist.
+                                <br> <br>
+                                Above all, think of life as a prototype. We can conduct experiments, make discoveries,
+                                and change our perspectives. We can look for opportunities to turn processes into
+                                projects that have tangible outcomes. We can learn how to take joy in the things we
+                                create whether they take the form of a fleeting experience or an heirloom that will last
+                                for generations. We can learn that reward comes in creation and re-creation, no just in
+                                the consumption of the world around us. Active participation in the process of creation
+                                is our right and our privilege. We can learn to measure the success of our ideas not by
+                                our bank accounts by their impact on the world.
+                                <br> <br>
+
+                                It is not enough that we build products that function, that are understandable and
+                                usable, we also need to build products that bring joy and excitement, pleasure and fun,
+                                and, yes, beauty to people’s lives. Creativity is to discover a question that has never
+                                been asked. If one brings up an idiosyncratic question, the answer he gives will
+                                necessarily be unique as well.
+                            </p>
+                        </div>
+                        <div class="article__inner-opening">
+                            <img src="./images/opening.png" alt="">
+                        </div>
+                        <div class="article__inner-roadmap">
+                            <div class="articleStep">
+                                <div class="articleStep__head">
+                                    <div class="articleStep__icon">
+                                        <img src="./images/icons/pupil.svg" alt="">
+                                    </div>
+                                    <h5>
+                                        11:00 / zahájení pěší pouti ze Špindlerova Mlýna od kostela sv. Petra
+                                    </h5>
+                                </div>
+
+                            </div>
+                            <div class="articleStep">
+                                <div class="articleStep__head">
+                                    <div class="articleStep__icon sm">
+                                        <img src="./images/icons/clock.svg" alt="">
+                                    </div>
+                                    <h5>
+                                        15:00 / začátek mše svaté, hlavní celebrant královehradecký biskup Mons. Jan
+                                        Vokál
+                                    </h5>
+                                </div>
+
+                            </div>
+                            <div class="articleStep">
+                                <div class="articleStep__head">
+                                    <div class="articleStep__icon sm">
+                                        <img src="./images/icons/clock.svg" alt="">
+                                    </div>
+                                    <h5>
+                                        16:15 / pouťové pohoštění v restauraci Erlebachovy boudy
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="articleStep">
+                                <div class="articleStep__head">
+                                    <div class="articleStep__icon sm">
+                                        <img src="./images/icons/clock.svg" alt="">
+                                    </div>
+                                    <h5>
+                                        K poslechu zahraje hudební skupina Petah.
+                                    </h5>
+                                </div>
+                                <div class="articleStep__body">
+                                    <p>
+                                        Above all, think of life as a prototype. We can conduct experiments, make
+                                        discoveries, and change our perspectives. We can look for opportunities to turn
+                                        processes into projects that have tangible outcomes. We can learn how to take
+                                        joy in
+                                        the things we create whether they take the form .
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="video" id="videoWrapper">
+                            <video src="./images/video.mp4" poster="./images/poster.jpg" id="video"></video>
+                            <div class="video__play" id="playBtn">
+                                <span>
+                                    <img src="./images/icons/play.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="article__inner-text">
+                            <h4>
+                                Quisque tincidunt scelerisque libero
+                            </h4>
+                            <p>
+                                Above all, think of life as a prototype. We can conduct experiments, make discoveries,
+                                and change our perspectives. We can look for opportunities to turn processes into
+                                projects that have tangible outcomes. We can learn how to take joy in the things we
+                                create whether they take the form of a fleeting experience or an heirloom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- article end
+      =========================================== -->
+        <!-- gallery start
+    =========================================== -->
+        <section class="gallery big">
+            <div class="auto__container">
+                <div class="gallery__inner">
+                    <div class="gallery__inner-title">
+                        <h4>
+                            Galerie
+                        </h4>
+                    </div>
+                    <div class="gallery__inner-row">
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/gallery/1.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/gallery/2.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/gallery/3.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/gallery/4.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/gallery/5.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/placeholder.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/placeholder.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/placeholder.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="galleryItem">
+                            <div class="galleryItem__inner">
+                                <img src="./images/placeholder.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery end
+      =========================================== -->
+        <!-- event start
+    =========================================== -->
+        <section class="event">
+            <div class="auto__container">
+                <div class="event__inner">
+                    <div class="event__inner-similar">
+                        <h4>
+                            Další akce
+                        </h4>
+                    </div>
+                    <div class="event__inner-slider">
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/1.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Kultura
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Pouť ke kapličce sv. <br> Františka z Assisi
+                                    </h5>
+                                    <p>
+                                        Duchovní akce spojená s bohoslužbou pod vedením našeho faráře
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Erlebachova bouda
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/2.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Přednáška
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Domácí soběstačnost
+                                    </h5>
+                                    <p>
+                                        Přednáška o využití bylinek v domácnosti
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023 od 11:30
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Kulturní dům
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/3.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Sport
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Špindl Ski Opening
+                                    </h5>
+                                    <p>
+                                        Zahájení zimní sezóny
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            09. - 10. 12. 2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Svatý Petr
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/1.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Kultura
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Pouť ke kapličce sv. <br> Františka z Assisi
+                                    </h5>
+                                    <p>
+                                        Duchovní akce spojená s bohoslužbou pod vedením našeho faráře
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Erlebachova bouda
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/2.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Přednáška
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Domácí soběstačnost
+                                    </h5>
+                                    <p>
+                                        Přednáška o využití bylinek v domácnosti
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023 od 11:30
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Kulturní dům
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/3.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Sport
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Špindl Ski Opening
+                                    </h5>
+                                    <p>
+                                        Zahájení zimní sezóny
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            09. - 10. 12. 2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Svatý Petr
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/1.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Kultura
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Pouť ke kapličce sv. <br> Františka z Assisi
+                                    </h5>
+                                    <p>
+                                        Duchovní akce spojená s bohoslužbou pod vedením našeho faráře
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Erlebachova bouda
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/2.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Přednáška
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Domácí soběstačnost
+                                    </h5>
+                                    <p>
+                                        Přednáška o využití bylinek v domácnosti
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            08.10.2023 od 11:30
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Kulturní dům
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="eventCard">
+                            <div class="eventCard__inner">
+                                <div class="eventCard__image">
+                                    <img src="./images/event/3.jpg" alt="">
+                                    <div class="eventCard__tag">
+                                        Sport
+                                    </div>
+                                </div>
+                                <div class="eventCard__content">
+                                    <h5>
+                                        Špindl Ski Opening
+                                    </h5>
+                                    <p>
+                                        Zahájení zimní sezóny
+                                    </p>
+                                    <div class="eventCard__content-date">
+                                        <span>
+                                            <img src="./images/icons/calendar-sm.svg" alt="">
+                                        </span>
+                                        <b>
+                                            09. - 10. 12. 2023
+                                        </b>
+                                    </div>
+                                    <div class="eventCard__content-location">
+                                        <span>
+                                            <img src="./images/icons/location.svg" alt="">
+                                        </span>
+                                        <b>
+                                            Špindlerův Mlýn - Svatý Petr
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="event__inner-arrows">
+                        <button class="prev">
+                            <svg>
+                                <use xlink:href="#chevron-left"></use>
+                            </svg>
+                        </button>
+                        <span>
+                        </span>
+                        <button class="next">
+                            <svg>
+                                <use xlink:href="#chevron-left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- event end
+=========================================== -->
+        <!-- footer start
+    =========================================== -->
+        <footer class="footer" id="footer">
+            <div class="auto__container">
+                <div class="footer__inner">
+                    <a href="#" class="footer__inner-logo">
+                        <img src="./images/logo-dark.svg" alt="">
+                    </a>
+                    <div class="footer__inner-side">
+                        <div class="footer__inner-links">
+                            <p>
+                                © 2023 Město Špindlerův Mlýn
+                            </p>
+                            <span>
+                                /
+                            </span>
+                            <a href="#">
+                                Ochrana osobních údajů
+                            </a>
+                            <span>
+                                /
+                            </span>
+                            <a href="#">
+                                Nastavení Cookies
+                            </a>
+                            <span>
+                                /
+                            </span>
+                            <a href="#">
+                                Created by Media Solution
+                            </a>
+                        </div>
+                        <div class="footer__inner-social">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end
+    =========================================== -->
+    </main>
+
+    <!-- Sprites
+    =========================================== -->
+    <!-- <svg>
+      <use xlink:href="#voice"></use>
+    </svg> -->
+    <svg style="display: none">
+        <symbol id="mapIcon" viewBox="0 0 20 18">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 0C7.58368 0 5.625 1.95868 5.625 4.375C5.625 6.32847 8.48438 9.88889 9.57986 11.1812C9.80174 11.4431 10.1986 11.4431 10.4201 11.1812C11.5156 9.88889 14.375 6.32847 14.375 4.375C14.375 1.95868 12.4163 0 10 0ZM10 5.83333C9.19444 5.83333 8.54167 5.18056 8.54167 4.375C8.54167 3.56944 9.19444 2.91667 10 2.91667C10.8056 2.91667 11.4583 3.56944 11.4583 4.375C11.4583 5.18056 10.8056 5.83333 10 5.83333ZM0 8.52986C0.000101034 8.07552 0.27676 7.66699 0.698611 7.49826L4.81771 5.85069C4.99757 6.36736 5.24861 6.90764 5.55556 7.4625V15.5556L0.761806 17.7375C0.396875 17.8833 0 17.6146 0 17.2215V8.52986ZM10 12.4885C9.51146 12.4885 9.0493 12.274 8.73229 11.8997C8.04965 11.0941 7.32361 10.1767 6.66667 9.23576V15.5552L13.3333 17.7774V9.23611C12.6764 10.1767 11.9507 11.0944 11.2677 11.9C10.9507 12.274 10.4885 12.4885 10 12.4885ZM14.4444 7.77778L19.2382 5.59583C19.6031 5.45 20 5.71875 20 6.11181V14.8035C20 15.2578 19.7233 15.6664 19.3014 15.8351L14.4444 17.7778V7.77778Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+        <symbol id="list" viewBox="0 0 24 24">
+            <g>
+                <path d="M9 6H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M9 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M9 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M5 6V6.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M5 12V12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M5 18V18.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+
+            </g>
+        </symbol>
+        <symbol id="chevron-down" viewBox="0 0 13 8">
+            <g>
+                <path d=" M11.875 1.625L6.625 6.875L1.375 1.625" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            </g>
+        </symbol>
+        <symbol id="chevron-left" viewBox="0 0 24 24">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.7071 19.7071C17.0976 19.3166 17.0976 18.6834 16.7071 18.2929L10.2547 11.8405L16.7071 5.38816C17.0976 4.99766 17.0976 4.36446 16.7071 3.97396C16.3166 3.58346 15.6834 3.58346 15.2929 3.97396L8.13341 11.1334C7.74291 11.524 7.74291 12.1571 8.13341 12.5476L15.2929 19.7071C15.6834 20.0976 16.3166 20.0976 16.7071 19.7071ZM8.84051 11.8405L9.54761 12.5476L10.2547 11.8405L9.54761 11.1334L8.84051 11.8405Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 27 6">
+            <g>
+                <path d="M0 4.5H24L19 1" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </g>
+        </symbol>
+        <symbol id="arrow-right-sm" viewBox="0 0 13 14">
+            <g>
+                <path d="M1.25 7H11.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="transparent" />
+                <path d="M6.5 12.25L11.75 7L6.5 1.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" fill="transparent" />
+            </g>
+        </symbol>
+        <symbol id="play" viewBox="0 0 14 14">
+            <g>
+                <path d=" M12.0231 6.72548L2.35618 0.0586617C2.25385 -0.0116733 2.12118 -0.0190068 2.01184 0.0379945C1.90217
+      0.0956625 1.8335 0.208999 1.8335 0.333002V13.6667C1.8335 13.7907 1.90217 13.9043 2.01184 13.962C2.06051 13.9873
+      2.11384 14 2.16685 14C2.23318 14 2.29918 13.98 2.35618 13.941L12.0231 7.27416C12.1134 7.21183 12.1671 7.10949
+      12.1671 6.99982C12.1671 6.89015 12.1131 6.78782 12.0231 6.72548Z" fill="currentColor" />
+            </g>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="M21 0H3C1.3455 0 0 1.3455 0 3V21C0 22.6545 1.3455 24 3 24H12V15.75H9V12H12V9C12 6.5145 14.0145 4.5 16.5 4.5H19.5V8.25H18C17.172 8.25 16.5 8.172 16.5 9V12H20.25L18.75 15.75H16.5V24H21C22.6545 24 24 22.6545 24 21V3C24 1.3455 22.6545 0 21 0Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 24 24">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3765 4.14449C23.6719 4.90416 23.8781 5.78085 23.9343 7.05607C23.9906 8.33604 23.9953 8.7439 23.9953 12.0023C23.9953 15.2608 23.9812 15.6686 23.925 16.9486C23.8688 18.2238 23.6624 19.096 23.3672 19.8602C22.7436 21.4729 21.4684 22.7482 19.8554 23.3718C19.0959 23.6672 18.2192 23.8734 16.944 23.9296C15.6641 23.986 15.2562 23.9999 11.9978 23.9999C8.73931 23.9999 8.33127 23.986 7.05148 23.9296C5.77609 23.8734 4.90415 23.6672 4.13991 23.3718C3.34288 23.0718 2.61617 22.5982 2.01602 21.9887C1.40653 21.3885 0.933104 20.6666 0.628357 19.8602C0.332951 19.1005 0.126551 18.2238 0.0703257 16.9486C0.0141018 15.6686 0 15.2608 0 12.0023C0 8.7439 0.0141018 8.33604 0.0750877 7.0513C0.131312 5.77609 0.337529 4.90416 0.632936 4.13991C0.933104 3.34288 1.40653 2.61617 2.01602 2.01602C2.61617 1.40176 3.33812 0.932922 4.14467 0.628174C4.90415 0.332951 5.78085 0.126551 7.05606 0.0703262C8.33603 0.0141019 8.74389 0 12.0023 0C15.2608 0 15.6686 0.0141019 16.9534 0.0750879C18.2286 0.131312 19.1007 0.337529 19.8648 0.632936C20.6618 0.932921 21.3885 1.40652 21.9887 2.01602C22.6029 2.61617 23.0718 3.33812 23.3765 4.14449ZM21.3605 19.0819C21.5246 18.6599 21.7215 18.027 21.7731 16.8549C21.8293 15.589 21.8434 15.2139 21.8434 12.0117C21.8434 8.80946 21.8293 8.42981 21.7731 7.16394C21.7215 5.99641 21.5246 5.3589 21.3605 4.93694C21.1682 4.41645 20.8634 3.94761 20.4649 3.55843C20.0805 3.15992 19.6069 2.85517 19.0866 2.66306C18.6646 2.49896 18.0317 2.30209 16.8596 2.25044C15.5983 2.19422 15.2187 2.18011 12.0117 2.18011C8.80964 2.18011 8.4298 2.19422 7.16393 2.25044C5.99659 2.30209 5.35889 2.49896 4.93694 2.66306C4.41645 2.85517 3.94761 3.15992 3.55862 3.55843C3.15534 3.94303 2.85059 4.41645 2.6583 4.93694C2.4942 5.3589 2.29733 5.99183 2.24586 7.16394C2.18945 8.42505 2.17554 8.80946 2.17554 12.0117C2.17554 15.2139 2.18945 15.5937 2.24586 16.8596C2.29733 18.027 2.4942 18.6647 2.6583 19.0866C2.85059 19.6069 3.15534 20.0758 3.55386 20.4649C3.93827 20.8634 4.41187 21.1682 4.93217 21.3605C5.35413 21.5246 5.98707 21.7215 7.15917 21.7729C8.42046 21.8293 8.80486 21.8433 12.0071 21.8433C15.2093 21.8433 15.589 21.8293 16.8548 21.7729C18.0224 21.7215 18.6599 21.5246 19.0818 21.3605C20.1274 20.9572 20.9572 20.1274 21.3605 19.0819Z"
+                    fill="currentColor" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.83691 12.0022C5.83691 8.59832 8.5985 5.83691 12.0021 5.83691C15.406 5.83691 18.1674 8.59832 18.1674 12.0022C18.1674 15.406 15.406 18.1674 12.0021 18.1674C8.5985 18.1674 5.83691 15.406 5.83691 12.0022ZM8.00292 12.0022C8.00292 14.2105 9.79404 16.0014 12.0021 16.0014C14.2105 16.0014 16.0014 14.2105 16.0014 12.0022C16.0014 9.79386 14.2105 8.00293 12.0021 8.00293C9.79404 8.00293 8.00292 9.79386 8.00292 12.0022Z"
+                    fill="currentColor" />
+                <path
+                    d="M19.851 5.59312C19.851 6.38795 19.2065 7.03243 18.4115 7.03243C17.6167 7.03243 16.9722 6.38795 16.9722 5.59312C16.9722 4.7981 17.6167 4.15381 18.4115 4.15381C19.2065 4.15381 19.851 4.7981 19.851 5.59312Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="M24.0028 4.5585C23.1103 4.95 22.1592 5.2095 21.1677 5.3355C22.1877 4.7265 22.9662 3.7695 23.3323 2.616C22.3812 3.183 21.3312 3.5835 20.2122 3.807C19.3091 2.8455 18.0221 2.25 16.618 2.25C13.8939 2.25 11.7009 4.461 11.7009 7.1715C11.7009 7.5615 11.7339 7.9365 11.8149 8.2935C7.72422 8.094 4.1046 6.1335 1.67301 3.147C1.2485 3.8835 0.999488 4.7265 0.999488 5.634C0.999488 7.338 1.87702 8.8485 3.18506 9.723C2.39454 9.708 1.61901 9.4785 0.961986 9.117C0.961986 9.132 0.961986 9.1515 0.961986 9.171C0.961986 11.562 2.66755 13.548 4.90412 14.0055C4.50361 14.115 4.06709 14.1675 3.61408 14.1675C3.29907 14.1675 2.98106 14.1495 2.68255 14.0835C3.32007 16.032 5.12913 17.4645 7.28021 17.511C5.60615 18.8205 3.48057 19.6095 1.17949 19.6095C0.77598 19.6095 0.388967 19.5915 0.00195312 19.542C2.18153 20.9475 4.76462 21.75 7.55021 21.75C16.6045 21.75 21.5547 14.25 21.5547 7.749C21.5547 7.5315 21.5472 7.3215 21.5367 7.113C22.5132 6.42 23.3338 5.5545 24.0028 4.5585Z"
+                    fill="currentColor" />
+            </g>
+        </symbol>
+    </svg>
+    <!-- js
+    =========================================== -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

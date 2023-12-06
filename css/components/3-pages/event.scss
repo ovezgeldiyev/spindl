@@ -1,0 +1,460 @@
+.event {
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 3;
+  &__inner {
+    position: relative;
+    &-title {
+      margin-bottom: 40px;
+      h6 {
+        margin-bottom: 18px;
+      }
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: calc(60% - 8px);
+      margin: 0 -9px;
+      button {
+        font-family: $mainFont;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-right: 18px;
+        margin: 9px;
+        background-color: transparent;
+        transition: 0.3s ease;
+        &:hover {
+          span {
+            color: $main;
+            border-color: $main;
+          }
+        }
+        input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          opacity: 0;
+          cursor: pointer;
+          &:checked ~ span {
+            background-color: #72809d;
+            box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.208452);
+            color: $white;
+            border-color: $primary;
+          }
+        }
+        span {
+          width: 100%;
+          height: 100%;
+          color: $primary;
+          border: 2px solid rgba(169, 172, 181, 0.2);
+          border-radius: 24px;
+          padding: 10px 30px;
+          transition: 0.3s ease;
+          position: relative;
+          z-index: 1;
+          white-space: nowrap;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    &-similar {
+      position: absolute;
+      bottom: calc(100% + 15px);
+      left: 0;
+      z-index: 2;
+    }
+    &-slider {
+      margin: 0 -15px;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        right: calc(100% - 15px);
+        width: 3000px;
+        height: 100%;
+        background-color: $white;
+        content: "";
+        z-index: 2;
+      }
+    }
+    &-arrows {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 90px;
+      background-color: $white;
+      height: 180px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 100%;
+        height: calc(50% - 11px);
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          opacity: 0.8;
+        }
+        &.slick-disabled {
+          svg {
+            color: $gray;
+          }
+        }
+        &.next {
+          svg {
+            transform: scaleX(-1);
+          }
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+          color: $main;
+          transition: 0.3s ease;
+        }
+      }
+      span {
+        width: 22px;
+        height: 36px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 100%;
+          background-color: $gray;
+          content: "";
+          transform: translate(-50%, -50%) rotate(25deg);
+        }
+      }
+    }
+    .slick {
+      &-track {
+        display: flex !important;
+        align-items: stretch;
+      }
+      &-slide {
+        height: unset !important;
+      }
+      &-list {
+        overflow: visible !important;
+      }
+    }
+    .search {
+      width: calc(40% - 8px);
+      max-width: 370px;
+    }
+    .pagination {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    & > h4 {
+      margin-bottom: 10px;
+    }
+  }
+  &Card {
+    width: calc(33.3% - 30px);
+    margin: 15px;
+    position: relative;
+    display: block;
+    border: 1px solid #d4d8e1;
+    border-radius: 6px;
+    overflow: hidden;
+    &:hover {
+      opacity: 1;
+      .eventCard__image {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+    &__image {
+      position: relative;
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      padding-bottom: 73%;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(42, 43, 48, 0.2);
+        z-index: 1;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        @include fullImage;
+        transition: 0.3s ease;
+      }
+    }
+    &__tag {
+      min-width: 92px;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      z-index: 1;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 18px;
+    }
+    &__content {
+      padding: 20px;
+      color: $primary;
+      &-date {
+        margin: 18px 0 10px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          width: 16px;
+          height: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12px;
+          img {
+            width: 100%;
+          }
+        }
+        b {
+          width: calc(100% - 28px);
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      &-location {
+        display: flex;
+        justify-content: space-between;
+        span {
+          width: 14px;
+          height: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12px;
+          img {
+            width: 100%;
+          }
+        }
+        b {
+          width: calc(100% - 28px);
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+    }
+    h5 {
+      color: $main;
+      margin-bottom: 12px;
+    }
+    p {
+      line-height: 150%;
+    }
+  }
+}
+// 1380px
+@mixin event-xxxlg-xxxxlg {
+  .event {
+    &__inner {
+      &-slider {
+        padding-left: 70px;
+        &::before {
+          right: calc(100% - 80px);
+        }
+      }
+      &-similar{
+        padding-left: 70px;
+      }
+      &-arrows {
+        right: unset;
+        left: -20px;
+      }
+    }
+  }
+}
+// 1250px
+@mixin event-xlg-xxlg-extra {
+  .event {
+  }
+}
+// 1180px
+@mixin event-xlg-xxlg {
+  .event {
+    &__inner {
+      &-row {
+        margin: 0 -10px;
+      }
+      &-slider {
+        margin: 0 -10px;
+      }
+    }
+    &Card {
+      margin: 10px;
+      width: calc(33.3% - 20px);
+    }
+  }
+}
+// 1024px
+@mixin event-lg-xlg {
+  .event {
+    &__inner {
+      &-buttons {
+        margin: 0 -5px;
+        button {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+// 930px
+@mixin event-md-lg {
+  .event {
+    padding-bottom: 70px;
+    &Card {
+      width: calc(50% - 20px);
+    }
+  }
+}
+// 750px
+@mixin event-sm-md {
+  .event {
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+      }
+      &-top {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 30px;
+      }
+      &-buttons {
+        width: calc(100% + 10px);
+      }
+      &-similar {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        bottom: unset;
+        width: 100%;
+        padding: 0 70px 0 0;
+      }
+      &-slider {
+        margin: 0 -10px;
+        padding: 130px 0 0 0;
+        &::before {
+          display: none;
+        }
+      }
+      &-arrows {
+        top: 0;
+        bottom: unset;
+        right: 0;
+        left: unset;
+        flex-direction: column;
+        width: 60px;
+        height: 120px;
+        button {
+          height: calc(50% - 8px);
+          width: 100%;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        span {
+          display: block;
+          width: 24px;
+          height: 16px;
+          &::before {
+            transform: translate(-50%, -50%) rotate(60deg);
+            height: 150%;
+          }
+        }
+      }
+      .search {
+        width: 100%;
+        max-width: 280px;
+        order: -1;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// 650px
+@mixin event-sm-md-extra {
+  .event {
+    &__inner {
+      &-row {
+        margin: 0;
+      }
+      &-slider {
+        margin: 0 -10px;
+      }
+      .slick {
+        &-slide {
+          margin: 0 10px;
+        }
+      }
+    }
+    &Card {
+      margin: 0 0 20px 0;
+      width: 100%;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// 540px
+@mixin event-xsm-sm {
+  .event {
+    padding-bottom: 40px;
+    &__inner {
+      .search {
+        max-width: unset;
+      }
+    }
+  }
+}
+// 440px
+@mixin event-xxsm-xsm {
+  .event {
+  }
+}

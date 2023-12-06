@@ -1,0 +1,547 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  h1, .heading1 {
+    font-size: 70px;
+  }
+  h2, .heading2 {
+    font-size: 60px;
+  }
+  .events {
+    transform: translate(50%);
+  }
+  .scroll {
+    transform: translate(50%);
+  }
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1, .heading1 {
+    font-size: 60px;
+  }
+  h2, .heading2 {
+    font-size: 55px;
+  }
+  h3 {
+    font-size: 44px;
+  }
+  p {
+    &.ex {
+      font-size: 22px;
+    }
+  }
+  .events {
+    top: 74px;
+    right: -16px;
+    transform: translate(0);
+    &__item {
+      margin-bottom: 15px;
+      &-icon {
+        width: 26px;
+        height: 26px;
+        &.sm {
+          img {
+            max-width: 20px;
+          }
+        }
+        &.mid {
+          img {
+            max-width: 23px;
+          }
+        }
+      }
+      p {
+        font-size: 9px;
+        line-height: 13px;
+      }
+    }
+  }
+  .scroll {
+    width: 65px;
+    transform: translate(0);
+    right: -16px;
+  }
+  .lang {
+    width: 36px;
+    height: 36px;
+    &:hover {
+      .lang__dropdown {
+        opacity: 1;
+        max-height: 300px;
+        padding: 46px 0 10px;
+      }
+    }
+    &__btn {
+      img {
+        width: 22px;
+      }
+    }
+    &__dropdown {
+      li {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .seasons {
+    width: 100%;
+    &Item {
+      padding: 20px 0;
+      &__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      h6 {
+        font-size: 14px;
+        line-height: 130%;
+      }
+      p {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+    &__link {
+      padding: 20px 0;
+      p {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+    span {
+      width: 20px;
+      height: 40px;
+      margin: 20px 20px 0;
+    }
+  }
+  .title {
+    font-size: 220px;
+  }
+  .main {
+    &.big {
+      padding-top: 82.02px;
+    }
+  }
+  .contact {
+    left: 0;
+  }
+  @include header-xxxlg-xxxxlg;
+  @include nav-xxxlg-xxxxlg;
+  @include hero-xxxlg-xxxxlg;
+  @include offer-xxxlg-xxxxlg;
+  @include event-xxxlg-xxxxlg;
+  @include footer-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1, .heading1 {
+    font-size: 55px;
+  }
+  h2, .heading2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    &.ex {
+      font-size: 20px;
+    }
+  }
+  .plan {
+    padding: 60px;
+  }
+  .message {
+    right: 20px;
+    &.active {
+      bottom: 80px;
+    }
+  }
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  @include offer-xlg-xxlg;
+  @include reference-xlg-xxlg;
+  @include gallery-xlg-xxlg;
+  @include event-xlg-xxlg;
+  @include overview-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1, .heading1 {
+    font-size: 50px;
+  }
+  h2, .heading2 {
+    font-size: 45px;
+  }
+  .title {
+    font-size: 200px;
+  }
+  .lang {
+    position: relative;
+  }
+  .seasons {
+    width: 100%;
+    &__nav {
+      width: 83%;
+    }
+    &Item {
+      padding: 15px 0;
+      &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+      }
+      h6 {
+        font-size: 12px;
+        line-height: 130%;
+      }
+      p {
+        font-size: 8px;
+        line-height: 15px;
+        margin-bottom: 4px;
+      }
+    }
+    &__link {
+      width: 17%;
+      padding: 15px 0;
+      p {
+        font-size: 8px;
+        line-height: 15px;
+      }
+    }
+    span {
+      width: 17px;
+      height: 30px;
+      margin: 15px 8px 0;
+    }
+  }
+  .plan {
+    padding: 50px 40px;
+  }
+  .video {
+    min-height: 240px;
+    &__play {
+      span {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+  .contact {
+    width: 80%;
+    &__inner {
+      padding: 20px 0;
+      & > span {
+        width: 20px;
+        height: 40px;
+        margin: 0 20px;
+      }
+      .message {
+        margin-right: 30px;
+      }
+    }
+  }
+  .lang {
+    z-index: 10;
+  }
+  .scroll {
+    bottom: 100px;
+    &.big {
+      bottom: 150px;
+    }
+  }
+  .message {
+    right: 10px;
+    &.active {
+      bottom: 330px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include intro-lg-xlg;
+  @include event-lg-xlg;
+  @include footer-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1, .heading1 {
+    font-size: 45px;
+  }
+  h2, .heading2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    &.big {
+      font-size: 16px;
+    }
+    &.ex {
+      font-size: 18px;
+    }
+  }
+  .title {
+    font-size: 170px;
+  }
+  .plan {
+    padding: 30px 24px;
+    &__inner {
+      &-content {
+        width: 55%;
+      }
+    }
+  }
+  .search {
+    &.big {
+      padding: 15px 12px;
+      input {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      button {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  @include hero-md-lg;
+  @include intro-md-lg;
+  @include offer-md-lg;
+  @include reference-md-lg;
+  @include gallery-md-lg;
+  @include article-md-lg;
+  @include story-md-lg;
+  @include event-md-lg;
+  @include overview-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1, .heading1 {
+    font-size: 38px;
+  }
+  h2, .heading2 {
+    font-size: 36px;
+  }
+  .seasons {
+    width: calc(100% + 40px);
+    left: -20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.208452);
+    padding-left: 20px;
+    &__nav {
+      width: 62%;
+    }
+    &Item {
+      padding: 13px 0;
+      display: none;
+      &::before {
+        display: none;
+      }
+      &.active {
+        display: flex;
+      }
+      &__icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 20px;
+      }
+      h6 {
+        font-size: 18px;
+        line-height: 130%;
+      }
+      p {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 2px;
+      }
+    }
+    &__link {
+      width: 38%;
+      padding: 15px 0;
+      p {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    span {
+      display: none;
+    }
+  }
+  .plan {
+    padding: 50px 20px;
+    transform: translate(0);
+    margin-bottom: 100px;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-content {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .video {
+    margin: 24px 0;
+    &__play {
+      span {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .contact {
+    width: calc(100% + 40px);
+    bottom: unset;
+    left: -20px;
+    top: calc(100% - 1px);
+    &__inner {
+      width: 100%;
+      padding: 20px;
+      justify-content: space-between;
+      & > span {
+        display: none;
+      }
+      .message {
+        margin: 0 0 0 20px;
+        order: 2;
+      }
+    }
+    &__item {
+      &:last-child {
+        display: none;
+      }
+      p {
+        &.big {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  @include nav-sm-md;
+  @include hero-sm-md;
+  @include intro-sm-md;
+  @include offer-sm-md;
+  @include reference-sm-md;
+  @include gallery-sm-md;
+  @include article-sm-md;
+  @include event-sm-md;
+  @include overview-sm-md;
+  @include story-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+  @include offer-sm-md-extra;
+  @include event-sm-md-extra;
+  @include overview-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1, .heading1 {
+    font-size: 30px;
+    letter-spacing: 0.02px;
+  }
+  p {
+    &.ex {
+      font-size: 16px;
+    }
+  }
+
+  .banner {
+    margin-top: 30px;
+    &__image {
+      min-height: 350px;
+    }
+    &__content {
+      p {
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .video {
+    &__play {
+      span {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .pagination {
+    padding: 24px 0 15px;
+    &__button {
+      width: 48px;
+      height: 48px;
+      svg {
+        width: 11px;
+        height: 11px;
+      }
+    }
+    &__row {
+      a {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 7px;
+        margin: 0 7px;
+      }
+    }
+  }
+
+  .filterBtn {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible
+    }
+  }
+  .scroll {
+    bottom: 150px;
+    &.big {
+      bottom: 150px;
+    }
+  }
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include intro-xsm-sm;
+  @include offer-xsm-sm;
+  @include reference-xsm-sm;
+  @include gallery-xsm-sm;
+  @include article-xsm-sm;
+  @include event-xsm-sm;
+  @include overview-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

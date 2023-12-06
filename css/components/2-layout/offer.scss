@@ -1,0 +1,522 @@
+.offer {
+  padding: 60px 0 70px;
+  position: relative;
+  z-index: 2;
+  &.sm {
+    padding-bottom: 35px;
+  }
+  &.ex {
+    padding: 0;
+  }
+  &.lg {
+    padding: 90px 0 160px;
+  }
+  &.md {
+    padding: 130px 0 60px;
+    .offer__inner-similar {
+      padding: 0;
+    }
+  }
+  &__inner {
+    position: relative;
+    &-title {
+      margin-bottom: 45px;
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h6 {
+        margin-bottom: 18px;
+      }
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      &.active {
+        .offerCard {
+          &:nth-child(n) {
+            display: flex;
+          }
+        }
+      }
+    }
+    &-similar {
+      padding-left: 120px;
+      position: absolute;
+      bottom: calc(100% + 15px);
+      left: 0;
+      z-index: 2;
+    }
+    &-slider {
+      margin: 0 -15px;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        right: calc(100% - 15px);
+        width: 3000px;
+        height: 100%;
+        background-color: $white;
+        content: "";
+        z-index: 2;
+      }
+    }
+    &-arrows {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 90px;
+      background-color: $white;
+      height: 180px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        width: 100%;
+        height: calc(50% - 11px);
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          opacity: 0.8;
+        }
+        &.slick-disabled {
+          svg {
+            color: $gray;
+          }
+        }
+        &.next {
+          svg {
+            transform: scaleX(-1);
+          }
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+          color: $main;
+          transition: 0.3s ease;
+        }
+      }
+      span {
+        width: 22px;
+        height: 36px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 100%;
+          background-color: $gray;
+          content: "";
+          transform: translate(-50%, -50%) rotate(25deg);
+        }
+      }
+    }
+    .slick {
+      &-track {
+        display: flex !important;
+        align-items: stretch;
+      }
+      &-slide {
+        height: unset !important;
+      }
+      &-list {
+        overflow: visible !important;
+      }
+    }
+  }
+  &Card {
+    display: flex;
+    width: calc(33.33% - 30px);
+    margin: 15px;
+    position: relative;
+    &:nth-child(n + 6) {
+      display: none;
+    }
+    &:hover {
+      opacity: 1;
+      img {
+        transform: scale(1.1);
+      }
+    }
+    &.big {
+      width: calc(66.66% - 30px);
+      .offerCard {
+        &__inner {
+          padding-bottom: 48%;
+        }
+      }
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    &__inner {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      z-index: 1;
+    }
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(42, 43, 48, 0.2);
+        z-index: 1;
+      }
+      img {
+        position: relative;
+        z-index: 0;
+        @include fullImage;
+        transition: 0.3s ease;
+      }
+    }
+    &__tag {
+      min-width: 92px;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 18px;
+      &:hover {
+        opacity: 1;
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+    &__content {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px;
+      color: $white;
+    }
+    h5 {
+      margin-bottom: 8px;
+    }
+  }
+}
+// 1380px
+@mixin offer-xxxlg-xxxxlg {
+  .offer {
+    &.md {
+      .offer__inner {
+        &-similar{
+          padding-left: 70px;
+        }
+      }
+    }
+    &__inner {
+      &-slider {
+        padding-left: 70px;
+        &::before {
+          right: calc(100% - 85px);
+        }
+      }
+      &-arrows {
+        right: unset;
+        left: -20px;
+      }
+    }
+  }
+}
+// 1250px
+@mixin offer-xlg-xxlg-extra {
+  .offer {
+  }
+}
+// 1180px
+@mixin offer-xlg-xxlg {
+  .offer {
+    padding: 40px 0;
+    &.lg {
+      padding: 60px 0 110px;
+    }
+    &.md {
+      padding: 100px 0 50px;
+    }
+    &__inner {
+      &-title {
+        margin-bottom: 30px;
+      }
+      &-row {
+        margin: 0 -10px;
+      }
+      &-slider {
+        margin: 0 -10px;
+      }
+      &-similar {
+        padding-left: 70px;
+      }
+    }
+    &Card {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+      &.big {
+        width: calc(66.66% - 20px);
+      }
+    }
+  }
+}
+// 1024px
+@mixin offer-lg-xlg {
+  .offer {
+  }
+}
+// 930px
+@mixin offer-md-lg {
+  .offer {
+    &.lg {
+      padding: 80px 0;
+    }
+    &__inner {
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-row {
+        margin: 0 -5px;
+      }
+      &-slider {
+        margin: 0 -5px;
+        &::before {
+          right: calc(100% - 75px);
+        }
+      }
+    }
+    &Card {
+      width: calc(33.33% - 10px);
+      margin: 5px;
+      &.big {
+        width: calc(66.66% - 10px);
+      }
+      &__tag {
+        top: 18px;
+        right: 18px;
+      }
+      &__content {
+        padding: 18px;
+      }
+      h5 {
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+// 750px
+@mixin offer-sm-md {
+  .offer {
+    padding: 35px 0;
+    &.lg {
+      padding: 0 0 80px;
+    }
+    &.md {
+      padding: 20px 0 40px;
+      .offer__inner {
+        &-similar{
+          padding: 0 70px 0 0;
+        }
+      }
+    }
+    &.sm {
+      .offer {
+        &__inner {
+          padding-bottom: 110px;
+        }
+      }
+    }
+    &__inner {
+      position: relative;
+      &-row {
+        margin: 0 -10px;
+      }
+      &-slider {
+        margin: 0 -10px;
+        padding: 130px 0 0 0;
+        &::before {
+          display: none;
+        }
+      }
+      &-arrows {
+        top: 0;
+        bottom: unset;
+        right: 0;
+        left: unset;
+        flex-direction: column;
+        width: 60px;
+        height: 120px;
+        button {
+          height: calc(50% - 8px);
+          width: 100%;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        span {
+          display: block;
+          width: 24px;
+          height: 16px;
+          &::before {
+            transform: translate(-50%, -50%) rotate(60deg);
+            height: 150%;
+          }
+        }
+      }
+      &-similar {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        bottom: unset;
+        width: 100%;
+        padding: 0 70px 0 0;
+      }
+      .showMoreBtn {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+      }
+    }
+    &Card {
+      width: calc(50% - 20px);
+      margin: 10px;
+      &.big {
+        width: calc(100% - 20px);
+      }
+      &__tag {
+        top: 18px;
+        right: 18px;
+      }
+      &__content {
+        padding: 18px;
+      }
+      h5 {
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+// 650px
+@mixin offer-sm-md-extra {
+  .offer {
+    &__inner {
+      &-row {
+        margin: 0 -5px;
+      }
+      &-slider {
+        margin: 0 -5px;
+      }
+    }
+    &Card {
+      width: calc(50% - 10px);
+      margin: 5px;
+      &.big {
+        width: calc(100% - 10px);
+      }
+      &__tag {
+        top: 18px;
+        right: 18px;
+      }
+      &__content {
+        padding: 14px;
+      }
+      h5 {
+        font-size: 17px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+// 540px
+@mixin offer-xsm-sm {
+  .offer {
+    &__inner {
+      &-title {
+        margin-bottom: 35px;
+        h6 {
+          margin-bottom: 8px;
+        }
+      }
+      &-row {
+        margin: 0;
+      }
+      &-slider {
+        margin: 0 -10px;
+      }
+      .slick {
+        &-slide {
+          margin: 0 10px;
+        }
+      }
+    }
+    &Card {
+      width: 100%;
+      margin: 0 0 20px 0;
+      &:nth-child(n + 3) {
+        display: none;
+      }
+      &.big {
+        width: 100%;
+        .offerCard {
+          &__inner {
+            padding-bottom: 100%;
+          }
+        }
+      }
+      &__tag {
+        top: 24px;
+        right: 24px;
+      }
+      &__content {
+        padding: 24px;
+      }
+      h5 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+// 440px
+@mixin offer-xxsm-xsm {
+  .offer {
+  }
+}
